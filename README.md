@@ -1,4 +1,4 @@
 # INTRODUCTION TO COMPUTER SCIENCE AND PROGRAMMING IN PYTHON
-Solutions for the program assignments of the course 6.0001 thought at MIT!
+Solutions for the program assignments, course 6.0001 MIT!
 
 Lets test it
