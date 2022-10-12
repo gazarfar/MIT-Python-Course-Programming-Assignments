@@ -22,9 +22,19 @@ def get_permutations(sequence):
     Note: depending on your implementation, you may return the permutations in
     a different order than what is listed here.
     '''
-
-    pass #delete this line and replace with your code here
-
+    permute = []
+    squnce_len = len(sequence)
+    if  squnce_len < 2:
+        return(sequence)
+    else:
+        for i in range(0,squnce_len):
+            tmp = sequence[0:i]+sequence[i+1:squnce_len]
+            rest = get_permutations(tmp) 
+            for words in rest:
+                permute.append(words + sequence[i])
+        permute = list(dict.fromkeys(permute))
+        return permute
+   
 if __name__ == '__main__':
 #    #EXAMPLE
 #    example_input = 'abc'
